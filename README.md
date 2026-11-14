@@ -4,6 +4,49 @@ Matfess adalah aplikasi Android untuk mahasiswa: catatan kuliah, tugas dengan al
 
 Tampilan memakai bahasa desain **Liquid Glass** (permukaan translusen, rim terang, bloom lembut, animasi pegas) dengan dukungan penuh **mode terang dan gelap**. Seluruh data akademik disimpan lokal memakai **SQLite**, sedangkan dua endpoint **REST API** (Retrofit) dipakai untuk hari libur nasional dan kutipan motivasi.
 
+## Tampilan aplikasi
+
+Screenshot diambil langsung dari build debug pada emulator Android 7.1 (API 25), resolusi 1440 × 2560.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/00-splash.jpg" width="240" alt="Splash screen"><br><sub><b>Splash</b></sub></td>
+    <td align="center"><img src="docs/screenshots/01-onboarding-catatan.jpg" width="240" alt="Onboarding catatan"><br><sub><b>Onboarding · Catatan</b></sub></td>
+    <td align="center"><img src="docs/screenshots/02-onboarding-ritme.jpg" width="240" alt="Onboarding ritme"><br><sub><b>Onboarding · Ritme</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/03-onboarding-progres.jpg" width="240" alt="Onboarding progres"><br><sub><b>Onboarding · Progres</b></sub></td>
+    <td align="center"><img src="docs/screenshots/04-login.jpg" width="240" alt="Halaman masuk"><br><sub><b>Masuk / Login</b></sub></td>
+    <td align="center"><img src="docs/screenshots/05-beranda.jpg" width="240" alt="Beranda"><br><sub><b>Beranda</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/06-beranda-gelap.jpg" width="240" alt="Beranda mode gelap"><br><sub><b>Beranda · Mode gelap</b></sub></td>
+    <td align="center"><img src="docs/screenshots/07-akademik-catatan.jpg" width="240" alt="Akademik catatan"><br><sub><b>Akademik · Catatan</b></sub></td>
+    <td align="center"><img src="docs/screenshots/08-akademik-jadwal.jpg" width="240" alt="Akademik jadwal"><br><sub><b>Akademik · Jadwal</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/09-akademik-tugas.jpg" width="240" alt="Akademik tugas"><br><sub><b>Akademik · Tugas</b></sub></td>
+    <td align="center"><img src="docs/screenshots/10-fokus-pomodoro.jpg" width="240" alt="Fokus Pomodoro"><br><sub><b>Fokus · Pomodoro</b></sub></td>
+    <td align="center"><img src="docs/screenshots/11-tools.jpg" width="240" alt="Tools"><br><sub><b>Tools</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/12-kalkulator-ipk.jpg" width="240" alt="Kalkulator IPK"><br><sub><b>Kalkulator IPK</b></sub></td>
+    <td align="center"><img src="docs/screenshots/13-target-lulus.jpg" width="240" alt="Menuju kelulusan"><br><sub><b>Menuju kelulusan</b></sub></td>
+    <td align="center"><img src="docs/screenshots/14-random-kelompok.jpg" width="240" alt="Random kelompok"><br><sub><b>Random kelompok</b></sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/15-libur-nasional.jpg" width="240" alt="Libur nasional"><br><sub><b>Libur nasional · REST API</b></sub></td>
+    <td align="center"><img src="docs/screenshots/16-profil.jpg" width="240" alt="Profil"><br><sub><b>Profil</b></sub></td>
+    <td align="center"><img src="docs/screenshots/17-profil-gelap.jpg" width="240" alt="Profil mode gelap"><br><sub><b>Profil · Mode gelap</b></sub></td>
+  </tr>
+</table>
+
+## Unduh APK
+
+APK debug siap dipasang tersedia di repo: **[`dist/Matfess-debug.apk`](dist/Matfess-debug.apk)** (±10,4 MB).
+
+Di halaman GitHub, buka file tersebut lalu klik **Download raw file**. Aktifkan "Install unknown apps" untuk sumber file, kemudian pasang seperti biasa.
+
 ## Demo cepat
 
 | Item | Nilai |
