@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.matfess.app.ui.common.AuroraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_logo_mark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:letterSpacing="-0.02"
+                android:text="Matfess"
+                android:textAppearance="@style/TextAppearance.Matfess.Headline" />
+
+            <com.matfess.app.ui.common.LiquidButton
+                android:id="@+id/btnSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:minHeight="38dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="0dp"
+                android:text="Lewati"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                app:lbRadius="19dp"
+                app:lbVariant="glass" />
+        </LinearLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingHorizontal="4dp" />
+
+        <LinearLayout
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <com.matfess.app.ui.common.LiquidButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:text="Lanjut"
+            android:textColor="@color/text_on_accent"
+            android:textSize="14sp"
+            app:lbRadius="27dp"
+            app:lbVariant="filled" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="center"
+            android:text="Semua pengaturan bisa kamu ubah kapan saja."
+            android:textAppearance="@style/TextAppearance.Matfess.Caption" />
+    </LinearLayout>
+</FrameLayout>

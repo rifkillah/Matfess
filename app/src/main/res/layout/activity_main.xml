@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.matfess.app.ui.common.AuroraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navHost"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main" />
+
+    <com.matfess.app.ui.common.GlassCardView
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        app:gcElevation="18dp"
+        app:gcPressEnabled="false"
+        app:gcRadius="34dp"
+        app:gcTint="@color/tab_bar_bg">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp">
+
+            <com.matfess.app.ui.common.LiquidLensView
+                android:id="@+id/tabLens"
+                android:layout_width="56dp"
+                android:layout_height="54dp"
+                android:layout_gravity="start|center_vertical" />
+
+            <LinearLayout
+                android:id="@+id/tabItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tabHome"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="Beranda"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tabHomeIcon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_home" />
+
+                    <TextView
+                        android:id="@+id/tabHomeLabel"
+                        style="@style/TextAppearance.Matfess.TabLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beranda" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabAcademic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="Akademik"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tabAcademicIcon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_book" />
+
+                    <TextView
+                        android:id="@+id/tabAcademicLabel"
+                        style="@style/TextAppearance.Matfess.TabLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Akademik" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabFocus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="Fokus"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tabFocusIcon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_timer" />
+
+                    <TextView
+                        android:id="@+id/tabFocusLabel"
+                        style="@style/TextAppearance.Matfess.TabLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fokus" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabTools"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="Tools"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tabToolsIcon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_grid" />
+
+                    <TextView
+                        android:id="@+id/tabToolsLabel"
+                        style="@style/TextAppearance.Matfess.TabLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tools" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="Profil"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tabProfileIcon"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_person" />
+
+                    <TextView
+                        android:id="@+id/tabProfileLabel"
+                        style="@style/TextAppearance.Matfess.TabLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profil" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </com.matfess.app.ui.common.GlassCardView>
+</FrameLayout>

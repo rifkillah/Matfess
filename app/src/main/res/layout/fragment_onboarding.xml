@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="18dp">
+
+    <com.matfess.app.ui.common.GlassCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="280dp"
+        app:gcPressEnabled="false"
+        app:gcRadius="32dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="18dp">
+
+            <ImageView
+                android:id="@+id/decoIcon1"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="18dp"
+                android:alpha="0.5"
+                android:background="@drawable/bg_circle_soft"
+                android:contentDescription="@null"
+                android:padding="11dp"
+                android:src="@drawable/ic_sparkle" />
+
+            <ImageView
+                android:id="@+id/decoIcon2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="22dp"
+                android:layout_marginBottom="24dp"
+                android:alpha="0.45"
+                android:background="@drawable/bg_circle_soft"
+                android:contentDescription="@null"
+                android:padding="8dp"
+                android:src="@drawable/ic_star" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stepLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/bg_pill_soft"
+                    android:paddingHorizontal="14dp"
+                    android:paddingVertical="7dp"
+                    android:textAppearance="@style/TextAppearance.Matfess.Label" />
+
+                <FrameLayout
+                    android:id="@+id/iconWrap"
+                    android:layout_width="136dp"
+                    android:layout_height="136dp"
+                    android:background="@drawable/bg_circle_soft">
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:letterSpacing="-0.025"
+                    android:lineSpacingExtra="2dp"
+                    android:textAppearance="@style/TextAppearance.Matfess.Title"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp"
+                    android:textAppearance="@style/TextAppearance.Matfess.Body" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.matfess.app.ui.common.GlassCardView>
+
+    <TextView
+        android:id="@+id/highlights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:textAppearance="@style/TextAppearance.Matfess.Caption"
+        android:textColor="@color/text_secondary" />
+</LinearLayout>

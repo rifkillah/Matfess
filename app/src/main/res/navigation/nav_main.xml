@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.matfess.app.ui.home.HomeFragment"
+        android:label="Beranda" />
+    <fragment
+        android:id="@+id/academicFragment"
+        android:name="com.matfess.app.ui.academic.AcademicFragment"
+        android:label="Akademik">
+        <argument
+            android:name="page"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/focusFragment"
+        android:name="com.matfess.app.ui.focus.FocusFragment"
+        android:label="Fokus" />
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.matfess.app.ui.tools.ToolsFragment"
+        android:label="Tools" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.matfess.app.ui.profile.ProfileFragment"
+        android:label="Profil" />
+    <fragment
+        android:id="@+id/randomGroupFragment"
+        android:name="com.matfess.app.ui.tools.RandomGroupFragment"
+        android:label="Random Kelompok" />
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.matfess.app.ui.tools.EventsFragment"
+        android:label="Event Kampus" />
+    <fragment
+        android:id="@+id/ipkFragment"
+        android:name="com.matfess.app.ui.tools.IpkFragment"
+        android:label="Kalkulator IPK" />
+    <fragment
+        android:id="@+id/graduationFragment"
+        android:name="com.matfess.app.ui.profile.GraduationFragment"
+        android:label="Kelulusan">
+        <argument
+            android:name="tab"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

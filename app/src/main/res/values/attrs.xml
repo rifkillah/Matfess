@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GlassCardView">
+        <attr name="gcRadius" format="dimension" />
+        <attr name="gcTint" format="color" />
+        <attr name="gcStrokeWidth" format="dimension" />
+        <attr name="gcElevation" format="dimension" />
+        <attr name="gcPressEnabled" format="boolean" />
+        <attr name="gcHighlight" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LiquidButton">
+        <attr name="lbVariant" format="enum">
+            <enum name="glass" value="0" />
+            <enum name="filled" value="1" />
+            <enum name="tinted" value="2" />
+            <enum name="clear" value="3" />
+        </attr>
+        <attr name="lbTint" format="color" />
+        <attr name="lbRadius" format="dimension" />
+        <attr name="lbPressEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GlassSwitch">
+        <attr name="gsChecked" format="boolean" />
+        <attr name="gsTint" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressRingView">
+        <attr name="prProgress" format="float" />
+        <attr name="prStrokeWidth" format="dimension" />
+        <attr name="prTrackColor" format="color" />
+        <attr name="prColorStart" format="color" />
+        <attr name="prColorEnd" format="color" />
+        <attr name="prText" format="string" />
+        <attr name="prSubText" format="string" />
+        <attr name="prTextSize" format="dimension" />
+        <attr name="prSubTextSize" format="dimension" />
+        <attr name="prShowText" format="boolean" />
+    </declare-styleable>
+</resources>
